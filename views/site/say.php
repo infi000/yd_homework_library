@@ -1,7 +1,8 @@
 <?php
 
 use yii\helpers\Html;
-
+use yii\base\Widget;
+// use yii\jui\DatePicker;
 //$this->title = $name;
 ?>
 <?=Html::encode($message) ?>
@@ -15,3 +16,4 @@ use yii\helpers\Html;
 
 <?= Html::endForm() ?>
 
+<?= DatePicker::widget(['name' => 'date']) ?>
